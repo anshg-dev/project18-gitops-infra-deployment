@@ -26,9 +26,10 @@ resource "aws_s3_bucket" "gitops_demo" {
   bucket = "project18-gitops-demo-${random_id.bucket_suffix.hex}"
 
   tags = {
-    Project     = "Project18-GitOps"
-    Environment = "Development"
-    ManagedBy   = "Terraform"
+    Project       = "Project18-GitOps"
+    Environment   = "Development"
+    Demonstration = "Reviewer-Approval"
+    ManagedBy     = "Terraform"
   }
 }
 
